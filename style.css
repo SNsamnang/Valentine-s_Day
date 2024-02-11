@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f2acac;
+}
+.body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(back1.jpg);
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+.valentines-day-card {
+  width: 280px;
+  height: 500px;
+  background-color: pink;
+  border: 5px solid white;
+  border-radius: 5px;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.15),
+    30px 0 50px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.text-front {
+  border-radius: 5px;
+  width: 160px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+.containner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(back1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pic-slide {
+  width: 280px;
+  height: 500px;
+  background-color: rgb(227, 24, 176);
+  border-radius: 15px;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.15),
+    30px 0 50px rgba(0, 0, 0, 0.3);
+  border: 5px solid white;
+}
+img {
+  border-radius: 10px;
+  width: 100%;
+  height: 500px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slide</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio controls autoplay loop style="display: none">
+      <source src="audio.ogg" type="audio/ogg" />
+    </audio>
+    <a href="#">
+      <div class="containner">
+        <div class="pic-slide">
+          <img id="image" />
+        </div>
+      </div>
+    </a>
+    <script>
+      let i = 0;
+      const images = [
+        "img1.jpg",
+        "img2.jpg",
+        "img3.jpg",
+        "img4.jpg",
+        "img5.jpg",
+        "img6.jpg",
+        "img7.jpg",
+        "img8.jpg",
+      ];
+      const time = 2000;
+      const img = document.getElementById("image");
+      const changeImage = () => {
+        img.src = images[i];
+        if (i < images.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        setTimeout("changeImage()", time);
+      };
+      window.onload = changeImage;
+    </script>
+  </body>
+</html>
